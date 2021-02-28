@@ -23,7 +23,7 @@ export default function Score() {
   });
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="d-flex">
       <HeaderBadge>Tries: {tries}</HeaderBadge>
 
       <HeaderBadge isMiddle>

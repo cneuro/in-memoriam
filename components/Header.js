@@ -63,11 +63,8 @@ export default function Header() {
             <Button
               variant="outline-light"
               href="https://www.github.com/cneuro/in-memoriam"
-              className="mr-3"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-              }}
+              className="d-flex mr-3"
+              style={{ alignItems: 'center' }}
             >
               <Github className="mr-1" /> Source
             </Button>

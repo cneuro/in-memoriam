@@ -5,12 +5,7 @@ import Badge from 'react-bootstrap/Badge';
 export default function HeaderBadge({ children, isMiddle }) {
   return (
     <h5 className="mb-0">
-      <Badge
-        variant="light"
-        as="div"
-        className={isMiddle && 'mr-3 ml-3'}
-        style={{ display: 'flex' }}
-      >
+      <Badge variant="light" as="div" className={isMiddle && 'mr-3 ml-3'}>
         {children}
       </Badge>
     </h5>

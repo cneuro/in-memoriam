@@ -48,9 +48,11 @@ export default function Cards() {
 
   if (!pattern) {
     return (
-      <Spinner animation="border" role="status">
-        <span className="sr-only">Loading ...</span>
-      </Spinner>
+      <div className="d-flex" style={{ justifyContent: 'center' }}>
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading ...</span>
+        </Spinner>
+      </div>
     );
   }
 

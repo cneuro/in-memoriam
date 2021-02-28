@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js"],
+        "map": [
+          ["@/components", "./components"],
+          ["@/lib", "./lib"],
+          ["@/pages", "./pages"],
+          ["@/store", "./store"],
+        ]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "es2020": true,
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "error"
+  }
+}

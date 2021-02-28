@@ -1,10 +1,10 @@
 # in-memoriam
 
-https://in-memoriam.vercel.app/
+https://in-memoriam.vercel.app
 
 ## What is this?
 
-A simple card pair-matching memory game.
+A simple card-based pair-matching memory game.
 
 ## How does it work?
 
@@ -46,7 +46,7 @@ The app is hosted live on [Vercel](https://vercel.com/) to facilitate turnkey de
 
 The UI is mobile-ready, so loading this on a small screen will look & work great!
 
-***Why hooks instead of classes, lifecycle methods & higher order components?***
+### Why hooks instead of classes, lifecycle methods & higher order components?
 
 It seems like [the](https://overreacted.io/a-complete-guide-to-useeffect/) [future](https://blog.bitsrc.io/6-reasons-to-use-react-hooks-instead-of-classes-7e3ee745fe04) [of](https://blog.logrocket.com/why-you-should-adopt-react-hooks-instead-of-classes/) [React](https://reactjs.org/docs/hooks-faq.html).
 

@@ -57,7 +57,7 @@ export default function Cards() {
   }
 
   return (
-    <Row xs={2} md={4}>
+    <Row xs={2} sm={3} md={4}>
       {Object.keys(revealed).map((index) => (
         <Col key={index} className="mb-4">
           <ReactCardFlip

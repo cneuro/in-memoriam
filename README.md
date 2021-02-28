@@ -8,7 +8,7 @@ A simple card-based pair-matching memory game.
 
 ## How does it work?
 
-You are presented with a 4-by-4 grid of 12 cards. Click a card to reveal a number from 1 to 6. Then reveal another card. If both have matching numbers, they stay revealed and you get a match. If they don't match, they are covered up again. Every time a pair is revealed regardless of if they match, your Tries go up by one.
+You are presented with a grid of 12 cards. Click a card to reveal a number from 1 to 6. Then reveal another card. If both have matching numbers, they stay revealed and you get a match. If they don't match, they are covered up again. Every time a pair is revealed regardless of if they match, your Tries go up by one.
 
 You cannot hide a card yourself once you reveal it. The game is over when all of the six card pairs are revealed. Get your Tries as close to your Matches as possible in the least amount of time!
 

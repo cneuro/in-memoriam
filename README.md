@@ -4,7 +4,7 @@ Running live at: https://in-memoriam.vercel.app
 
 ## What is this?
 
-A simple card-based pair-matching memory game.
+A simple customizable card-based pair-matching memory game.
 
 ## How does it work?
 
@@ -34,7 +34,9 @@ The app is now live on http://localhost:3000.
 
 ### Configuration
 
-The game has a default of six card pairs whose value range from 1 to 6, which result in a grid 12 cards. In [`constants.js`](/lib/constants.js), you will find the variable `CARD_VALUES`. Changing that array to any (non-duplicate) set of values will allow you to change how many card pairs there are to play with and what their (string or number) face-up value is.
+The game has a default of six card pairs whose value range from 1 to 6, which result in a grid 12 cards. In [`constants.js`](/lib/constants.js), the variable `CARD_VALUES` controls this. Changing that array to any (non-duplicate) set of values will allow you to change how many card pairs there are to play with and what their (string or number) face-up value is.
+
+For example, setting the array to `[ 'hello', 'lol', 'gg' ]` will result in a grid of 6 cards and a match would occur if two cards with 'hello' would be revealed.
 
 ### About
 

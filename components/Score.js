@@ -26,7 +26,7 @@ export default function Score() {
     <div className="d-flex">
       <HeaderBadge>Tries: {tries}</HeaderBadge>
 
-      <HeaderBadge isMiddle>
+      <HeaderBadge className="mr-3 ml-3">
         Matches: {matches}/{totalMatches}
       </HeaderBadge>
 

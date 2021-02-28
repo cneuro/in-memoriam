@@ -6,13 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { Github, QuestionSquare } from 'react-bootstrap-icons';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Score from './Score';
 import { shuffleCards } from '@/store';
 
 export default function Header() {
   const dispatch = useDispatch();
+  const gridLength = Object.keys(useSelector((state) => state.revealed)).length;
 
   const handleReset = () => {
     dispatch({ type: 'RESET' });
@@ -44,6 +45,10 @@ export default function Header() {
                   </p>
 
                   <p>{'To reset the game at any time, click Reset.'}</p>
+
+                  <p className="d-md-none">
+                    <strong>{`If you can't see all ${gridLength} cards, remember to scroll down!`}</strong>
+                  </p>
                 </Popover.Content>
               </Popover>
             }

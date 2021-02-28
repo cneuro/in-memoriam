@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Badge from 'react-bootstrap/Badge';
 
-export default function HeaderBadge({ children, isMiddle }) {
+export default function HeaderBadge({ children, className }) {
   return (
     <h5 className="mb-0">
-      <Badge variant="light" as="div" className={isMiddle && 'mr-3 ml-3'}>
+      <Badge variant="light" as="div" className={className}>
         {children}
       </Badge>
     </h5>
@@ -14,9 +14,9 @@ export default function HeaderBadge({ children, isMiddle }) {
 
 HeaderBadge.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  isMiddle: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 HeaderBadge.defaultProps = {
-  isMiddle: false,
+  className: null,
 };

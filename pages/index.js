@@ -33,8 +33,28 @@ export default function Index() {
     <>
       <Header />
 
-      <Container style={{ marginTop: '5rem' }}>
-        <Cards />
+      <Container>
+        <div className="d-none d-sm-block" style={{ marginTop: '2.5rem' }} />
+
+        <div className="d-sm-none" style={{ marginTop: '4rem' }} />
+
+        <div
+          className="d-sm-none p-1"
+          style={{
+            position: 'fixed',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            backgroundColor: 'white',
+            zIndex: 100,
+            borderRadius: '0.5rem',
+          }}
+        >
+          <Score />
+        </div>
+
+        <div style={{ paddingTop: '2.5rem' }}>
+          <Cards />
+        </div>
 
         <Modal show={hasWon && showModal} onHide={handleClose}>
           <Modal.Header closeButton>

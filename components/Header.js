@@ -52,7 +52,7 @@ export default function Header() {
           </OverlayTrigger>
         </Navbar.Brand>
 
-        <Nav className="ml-auto mr-auto">
+        <Nav className="d-none d-sm-block ml-auto mr-auto">
           <Score />
         </Nav>
 
@@ -63,7 +63,7 @@ export default function Header() {
             <Button
               variant="outline-light"
               href="https://www.github.com/cneuro/in-memoriam"
-              className="mr-2"
+              className="mr-3"
               style={{
                 display: 'flex',
                 alignItems: 'center',

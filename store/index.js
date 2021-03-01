@@ -107,6 +107,7 @@ export const shuffleCards = () => {
   // Make sure the CARD_VALUES are unique, then nullify any exisiting order.
   const uniqueCards = [...new Set(CARD_VALUES)];
   cards.splice(0, cards.length);
+
   // Randomly generate an array of card pairs based on the available card values.
   // Shuffler adapted from https://stackoverflow.com/a/46545530
   const shuffledCards = uniqueCards

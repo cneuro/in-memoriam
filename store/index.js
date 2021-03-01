@@ -104,10 +104,13 @@ const initializeStore = (preloadedState) => {
 // 'cards' variable in the store. This would allow for the shuffling to occur automatically on every
 // RESET according to seed change.
 export const shuffleCards = () => {
+  // Make sure the CARD_VALUES are unique, then nullify any exisiting order.
+  const uniqueCards = [...new Set(CARD_VALUES)];
+  cards.splice(0, cards.length);
   // Randomly generate an array of card pairs based on the available card values.
   // Shuffler adapted from https://stackoverflow.com/a/46545530
-  cards.splice(0, cards.length);
-  const shuffledCards = CARD_VALUES.concat(CARD_VALUES)
+  const shuffledCards = uniqueCards
+    .concat(uniqueCards)
     .map((a) => ({ sort: Math.random(), value: a }))
     .sort((a, b) => a.sort - b.sort)
     .map((a) => a.value);

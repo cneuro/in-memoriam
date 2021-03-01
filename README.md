@@ -44,7 +44,7 @@ The app is built on [NextJS](https://nextjs.org/) which provides an easily-deplo
 
 Using [React Bootstrap](https://react-bootstrap.github.io/) as a frontend framework provides attractive foundational UI layout & components. It implements [ReactCardFlip](https://github.com/AaronCCWong/react-card-flip) for the card reveal animations. A TypeScript [GeoPattern](https://github.com/mooyoul/geo-pattern) library is used to randomly generate unique card backs for every game via a [nanoid](https://github.com/ai/nanoid) seed.
 
-The app is hosted live on [Vercel](https://vercel.com/) to facilitate turnkey deployment and CI. Finally, [ESLint](https://eslint.org/) and [husky](https://github.com/typicode/husky) are used alongside other linting tools to keep the code nice and tidy for every commit.
+The app is hosted live on [Vercel](https://vercel.com/) to facilitate turnkey deployment and CI. Finally, [ESLint](https://eslint.org/) alongside several linting plugins to keep the code nice and tidy.
 
 The UI is mobile-ready, so loading this on a small screen will look & work great!
 
